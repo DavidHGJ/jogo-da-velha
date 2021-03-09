@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JOGO DA VELHA</title>
+    <!-- Importando arquivos necessários -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Titulo do jogo -->
+    <h1>JOGO DA VELHA</h1>
+
+    <!-- Div principal do jogo -->
+    <div class="jogo"></div>
+
+    <!-- Botão de restart do jogo -->
+    <div align="center">
+        <button class="reiniciar" onclick="jogo.reiniciar_jogo()">Reiniciar</button>
+    </div>
+
+    <!-- Importando os arquivos JS -->
+    <script src="script.js"></script>
+    
+    <!-- Inicializando o jogo pela primeira vez -->
+    <script>
+        jogo.init( document.querySelector('.jogo'));
+        jogo.draw();
+    </script>
+</body>
+</html>

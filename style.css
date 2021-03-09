@@ -1,0 +1,71 @@
+/**** Configurações visuais basicas do jogo ****/
+.jogo {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: brown;
+    border-radius: 5%;
+    border: rgb(119, 30, 30) solid 2px;
+    color: brown;
+    margin: 0 auto;
+}
+
+.jogo div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 187, 187);
+    margin: auto;
+    font-size: 6em;
+    width: 85px;
+    height: 85px;
+    border-radius: 15%;
+    border: rgb(119, 30, 30) solid 2px;
+    transition: ease 0.3s;
+}
+/* Fim das configurações básicas do jogo */
+
+/* Configurações de efeito do jogo */
+.jogo div:hover {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background-color: rgb(155, 155, 155);
+}
+/* Fim das configurações de efeito do jogo */
+
+/**** Configurações básicas do botão de restart  ****/
+.reiniciar {
+    display: none;
+    background-color: brown;
+    color: rgb(187, 187, 187);
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px;
+    transition: ease 0.3s;
+}
+/* Fim das configurações básicas do botão de restart */
+
+/* Configurações de efeito do botão de restart */
+.reiniciar:hover {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.reiniciar:active {
+    padding: 0px 0px;
+    cursor: pointer;
+}
+/* Fim das configurações de efeito do botão de restart */
+
+h1 {
+    color: brown;
+    text-align: center;
+}
